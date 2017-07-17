@@ -194,11 +194,6 @@ const shitPlacesToLive = [
 const sample = (arr) => arr[Math.floor(Math.random() * arr.length)]
 const jobDescription = () => `${sample(tech)} ${sample(creatures)} in ${sample(shitPlacesToLive)}`;
 
-const anotherOne = () => {
-  document.querySelector('#display').innerHTML = jobDescription();
-}
-document.querySelector('#hitme').onclick = anotherOne();
-
 document.addEventListener("DOMContentLoaded", function(event) {
   const anotherOne = () => {
     document.querySelector('#display').innerHTML = jobDescription();
