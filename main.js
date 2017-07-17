@@ -198,3 +198,11 @@ const anotherOne = () => {
   document.querySelector('#display').innerHTML = jobDescription();
 }
 document.querySelector('#hitme').onclick = anotherOne();
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const anotherOne = () => {
+    document.querySelector('#display').innerHTML = jobDescription();
+  }
+  document.querySelector('#hitme').addEventListener('click', anotherOne);
+  anotherOne();
+});
